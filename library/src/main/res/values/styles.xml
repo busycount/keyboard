@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NumKeyboard">
+        <attr name="iconDelete" format="reference" />
+        <attr name="iconDone" format="reference" />
+        <attr name="bgDelete" format="reference" />
+        <attr name="bgDone" format="reference" />
+    </declare-styleable>
+</resources>
