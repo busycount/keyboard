@@ -104,6 +104,8 @@ public class NumKeyboard extends KeyboardView {
             return;
         }
         drawable.setBounds(key.x, key.y + getPaddingTop(), key.x + key.width, key.y + getPaddingTop() + key.height);
+        int[] drawableState = key.getCurrentDrawableState();
+        drawable.setState(drawableState);
         drawable.draw(canvas);
     }
 
@@ -125,12 +127,13 @@ public class NumKeyboard extends KeyboardView {
             int startX = (key.width - nWidth) / 2 + key.x;
             int startY = (key.height - nHeight) / 2 + key.y + getPaddingTop();
             drawable.setBounds(startX, startY, startX + nWidth, startY + nHeight);
-            drawable.draw(canvas);
         } else {
             int startX = (key.width - imgWidth) / 2 + key.x;
             int startY = (key.height - imgHeight) / 2 + key.y + getPaddingTop();
             drawable.setBounds(startX, startY, startX + imgWidth, startY + imgHeight);
-            drawable.draw(canvas);
         }
+        int[] drawableState = key.getCurrentDrawableState();
+        drawable.setState(drawableState);
+        drawable.draw(canvas);
     }
 }

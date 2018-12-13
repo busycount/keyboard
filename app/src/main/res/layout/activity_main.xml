@@ -16,6 +16,8 @@
         android:keyBackground="@drawable/key"
         android:keyTextColor="@color/color_000000"
         android:shadowRadius="0"
+        app:bgDelete="@drawable/bg_delete"
+        app:bgDone="@drawable/key"
         app:iconDelete="@drawable/ic_delete"
         app:iconDone="@drawable/ic_submit" />
 

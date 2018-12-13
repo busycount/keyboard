@@ -38,10 +38,14 @@
             android:keyLabel="9" />
     </Row>
     <Row>
-        <Key android:codes="-5" />
+        <Key
+            android:codes="-5"
+            android:keyLabel="delete" />
         <Key
             android:codes="48"
             android:keyLabel="0" />
-        <Key android:codes="-4" />
+        <Key
+            android:codes="-4"
+            android:keyLabel="done" />
     </Row>
 </Keyboard>
